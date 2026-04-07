@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "4a715411dc470543",
+    "type": "split",
+    "children": [
+      {
+        "id": "4458bcf8f34a1ce8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55f4bc9665193076",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Go Interview Prep/00 - Live Coding/Concurrency/problems/eg-cancel-001/README.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "38aba7b169deafbe",
+    "type": "split",
+    "children": [
+      {
+        "id": "eaf4af28fd0bcc65",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71e143a9a3166963",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "9b55d07ccd0bff78",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "0160d91a008daeb4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 358.5
+  },
+  "right": {
+    "id": "854c822dd966e211",
+    "type": "split",
+    "children": [
+      {
+        "id": "8dcd6086bfc8a948",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1800b8d65dafd7e4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Добро пожаловать.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для Добро пожаловать"
+            }
+          },
+          {
+            "id": "11768ec3513027b0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Добро пожаловать.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Добро пожаловать"
+            }
+          },
+          {
+            "id": "368daa397d0ca7c7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "8bc534284cde7266",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "b1851aae239bdcc9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Добро пожаловать.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура Добро пожаловать"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false
+    }
+  },
+  "active": "55f4bc9665193076",
+  "lastOpenFiles": [
+    "README.md",
+    "Go Interview Prep/00 - Live Coding/Concurrency/README.md",
+    "go.sum",
+    "go.mod",
+    "go-concurrency-trainer.skill",
+    "Go Interview Prep/00 - Live Coding/Concurrency/problems/eg-cancel-001/README.md",
+    "Go Interview Prep/00 - Cheat Sheet.md",
+    "Go Interview Prep/00 - Live Coding/Concurrency/go-concurrency-trainer.skill",
+    "Go Interview Prep/00 - Live Coding/Concurrency/go.sum",
+    "Go Interview Prep/00 - Live Coding/Concurrency/go.mod",
+    "Go Interview Prep/00 - Live Coding/Concurrency/solved/sync-reent-001/README.md",
+    "Go Interview Prep/00 - Live Coding/Concurrency/solved/sync-reent-001/main.go",
+    "Go Interview Prep/00 - Live Coding/Concurrency/solved/pat-worker-001/README.md",
+    "Go Interview Prep/00 - Live Coding/Concurrency/solved/pat-worker-001/main.go",
+    "Go Interview Prep/00 - Live Coding/Concurrency/solved/dl-trylck-001/README.md",
+    "Go Interview Prep/00 - Live Coding/Concurrency/solved/dl-trylck-001/main.go",
+    "Go Interview Prep/00 - Live Coding/Concurrency/solved/dl-lockord-001/README.md",
+    "Go Interview Prep/00 - Live Coding/Concurrency/solved/dl-lockord-001/main.go",
+    "Go Interview Prep/00 - Live Coding/Concurrency/solved/ctx-timeo-002/README.md",
+    "Go Interview Prep/00 - Live Coding/Concurrency/solved/ctx-cancel-001/ctx-cancel-001.md",
+    "Go Interview Prep/00 - Live Coding/Concurrency/solved/chan-fanin-001/chan-fanin-001.md",
+    "Go Interview Prep/00 - Live Coding/Concurrency/solved/chan-deadl-002/README.md",
+    "Go Interview Prep/00 - Live Coding/Concurrency/problems/sync-rwmut-001/README.md",
+    "Go Interview Prep/00 - Live Coding/Concurrency/problems/pat-ratelim-001/README.md",
+    "Go Interview Prep/08 - Behavioral/08.1 - STAR Stories.md",
+    "Go Interview Prep/07 - Core Go/07.2 - Interfaces & Type System.md",
+    "Go Interview Prep/07 - Core Go/07.1 - GC & Memory Model.md",
+    "Go Interview Prep/05 - Architecture/05.1 - Clean Architecture.md",
+    "Go Interview Prep/06 - Live Coding/06.1 - Concurrency Tasks.md",
+    "Go Interview Prep/05 - Architecture/05.2 - Hexagonal Architecture.md",
+    "Go Interview Prep/04 - Networking/04.2 - OSI Model & IP.md",
+    "Go Interview Prep/04 - Networking/04.1 - URL to Page (Full Journey).md",
+    "Go Interview Prep/03 - System Design/03.4 - Rate Limiting.md",
+    "Go Interview Prep/03 - System Design/03.3 - Distributed Patterns.md",
+    "Go Interview Prep/03 - System Design/03.2 - Circuit Breaker & Resilience.md",
+    "Go Interview Prep/03 - System Design/03.1 - API Gateway Patterns.md",
+    "Go Interview Prep/00 - Topic Map.canvas"
+  ]
+}

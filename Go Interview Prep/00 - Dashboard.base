@@ -1,0 +1,64 @@
+filters:
+  and:
+    - file.inFolder("Go Interview Prep")
+    - file.ext == "md"
+    - file.name != "cowork-prompt"
+    - file.name != "go-senior-interview-prep"
+formulas:
+  priority_label: if(priority == "critical", "🔴 Critical", if(priority == "important", "🟡 Important", if(priority == "normal", "🟢 Normal", "")))
+  status_label: if(status == "not-started", "⬜ Not Started", if(status == "in-progress", "🔵 In Progress", if(status == "done", "✅ Done", "")))
+properties:
+  topic:
+    displayName: Topic
+  formula.priority_label:
+    displayName: Priority
+  formula.status_label:
+    displayName: Status
+  status:
+    displayName: Raw Status
+  priority:
+    displayName: Raw Priority
+  file.folder:
+    displayName: Section
+views:
+  - type: table
+    name: All Topics
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - file.folder
+      - topic
+      - formula.priority_label
+      - formula.status_label
+  - type: table
+    name: Not Started
+    filters:
+      and:
+        - status == "not-started"
+    groupBy:
+      property: priority
+      direction: DESC
+    order:
+      - file.name
+      - topic
+      - formula.priority_label
+  - type: table
+    name: In Progress
+    filters:
+      and:
+        - status == "in-progress"
+    order:
+      - file.name
+      - topic
+      - formula.priority_label
+  - type: table
+    name: Done
+    filters:
+      and:
+        - status == "done"
+    order:
+      - file.name
+      - topic
+      - formula.priority_label

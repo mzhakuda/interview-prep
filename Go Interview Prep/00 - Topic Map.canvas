@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"a1b2c3d4e5f60001","type":"text","text":"# Senior Go Interview\n\n8 sections | 22 files | ~180 questions","x":0,"y":0,"width":300,"height":120,"color":"6"},
+		{"id":"a1b2c3d4e5f60002","type":"file","file":"Go Interview Prep/01 - Go Concurrency/01.1 - GMP Model & Scheduler.md","x":-600,"y":-400,"width":320,"height":100,"color":"1"},
+		{"id":"a1b2c3d4e5f60003","type":"file","file":"Go Interview Prep/02 - PostgreSQL/02.1 - MVCC & Transactions.md","x":300,"y":-400,"width":320,"height":100,"color":"1"},
+		{"id":"a1b2c3d4e5f60004","type":"file","file":"Go Interview Prep/03 - System Design/03.1 - API Gateway Patterns.md","x":600,"y":-100,"width":320,"height":100,"color":"3"},
+		{"id":"a1b2c3d4e5f60005","type":"file","file":"Go Interview Prep/04 - Networking/04.1 - URL to Page (Full Journey).md","x":600,"y":150,"width":320,"height":100,"color":"3"},
+		{"id":"a1b2c3d4e5f60006","type":"file","file":"Go Interview Prep/05 - Architecture/05.1 - Clean Architecture.md","x":300,"y":350,"width":320,"height":100,"color":"4"},
+		{"id":"a1b2c3d4e5f60008","type":"file","file":"Go Interview Prep/07 - Core Go/07.1 - GC & Memory Model.md","x":-600,"y":350,"width":320,"height":100,"color":"4"},
+		{"id":"a1b2c3d4e5f60007","type":"file","file":"Go Interview Prep/06 - Live Coding/06.1 - Concurrency Tasks.md","x":-600,"y":-150,"width":320,"height":100,"color":"1"},
+		{"id":"a1b2c3d4e5f60009","type":"file","file":"Go Interview Prep/08 - Behavioral/08.1 - STAR Stories.md","x":-120,"y":350,"width":320,"height":100,"color":"3"}
+	],
+	"edges":[
+		{"id":"e1b2c3d4e5f60001","fromNode":"a1b2c3d4e5f60001","fromSide":"left","toNode":"a1b2c3d4e5f60002","toSide":"right","color":"1","label":"critical"},
+		{"id":"e1b2c3d4e5f60002","fromNode":"a1b2c3d4e5f60001","fromSide":"right","toNode":"a1b2c3d4e5f60003","toSide":"left","color":"1","label":"critical"},
+		{"id":"e1b2c3d4e5f60003","fromNode":"a1b2c3d4e5f60001","fromSide":"right","toNode":"a1b2c3d4e5f60004","toSide":"left","color":"3","label":"important"},
+		{"id":"e1b2c3d4e5f60004","fromNode":"a1b2c3d4e5f60001","fromSide":"right","toNode":"a1b2c3d4e5f60005","toSide":"left","color":"3","label":"important"},
+		{"id":"e1b2c3d4e5f60005","fromNode":"a1b2c3d4e5f60001","fromSide":"bottom","toNode":"a1b2c3d4e5f60006","toSide":"top","color":"4","label":"normal"},
+		{"id":"e1b2c3d4e5f60006","fromNode":"a1b2c3d4e5f60001","fromSide":"left","toNode":"a1b2c3d4e5f60007","toSide":"right","color":"1","label":"critical"},
+		{"id":"e1b2c3d4e5f60007","fromNode":"a1b2c3d4e5f60001","fromSide":"bottom","toNode":"a1b2c3d4e5f60008","toSide":"top","color":"4","label":"normal"},
+		{"id":"e1b2c3d4e5f60008","fromNode":"a1b2c3d4e5f60001","fromSide":"bottom","toNode":"a1b2c3d4e5f60009","toSide":"top","color":"3","label":"important"},
+		{"id":"e1b2c3d4e5f60009","fromNode":"a1b2c3d4e5f60002","fromSide":"bottom","toNode":"a1b2c3d4e5f60007","toSide":"top","color":"1","label":"Concurrency → Live Coding"},
+		{"id":"e1b2c3d4e5f60010","fromNode":"a1b2c3d4e5f60004","fromSide":"bottom","toNode":"a1b2c3d4e5f60005","toSide":"top","color":"3","label":"SD → Networking"},
+		{"id":"e1b2c3d4e5f60011","fromNode":"a1b2c3d4e5f60002","fromSide":"right","toNode":"a1b2c3d4e5f60008","toSide":"left","color":"4","label":"Concurrency → Core Go"},
+		{"id":"e1b2c3d4e5f60012","fromNode":"a1b2c3d4e5f60006","fromSide":"left","toNode":"a1b2c3d4e5f60004","toSide":"bottom","color":"3","label":"Architecture → SD"}
+	]
+}
