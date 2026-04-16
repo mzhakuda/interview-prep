@@ -11,6 +11,24 @@ status: ready
 
 # Backend Interview — Cheat Sheet
 
+## Навигация
+
+**Go:**
+[[#GMP — планировщик]] | [[#Channels]] | [[#Sync примитивы]] | [[#Goroutine leaks — ловушки]] | [[#Stack vs Heap — что где живёт]] | [[#GC — сборщик мусора]] | [[#Базовые типы данных]] | [[#char / rune / byte]] | [[#String — immutable]] | [[#Array — value type, фиксированный размер]] | [[#Slice — внутренности]] | [[#Map — внутренности]] | [[#Mutability — сводная таблица]] | [[#Interfaces & Type System]] | [[#Slices]]
+
+**PostgreSQL:**
+[[#MVCC]] | [[#ACID]] | [[#Уровни изоляции]] | [[#Индексы]] | [[#Блокировки]] | [[#EXPLAIN ANALYZE]] | [[#Connection Pooling (PgBouncer)]]
+
+**Другое:**
+[[#gRPC vs REST]] | [[#Redis]] | [[#RabbitMQ]] | [[#Docker / Kubernetes]] | [[#HTTP & Сети]] | [[#CAP теорема]]
+
+---
+
+**Вопросы для интервьюера:**
+
+Какой стек и какие основные сервисы в команде?
+Как выглядит процесс найма дальше — сколько этапов?
+
 ---
 
 # GO
@@ -81,6 +99,12 @@ wg.Wait()
 **sync.Pool** — кэш переиспользуемых объектов, снижает GC pressure; объекты могут быть GC-нуты в любой момент
 
 **atomic** — `atomic.AddInt64`, `LoadInt64`, `StoreInt64`, `CompareAndSwapInt64` — счётчики/флаги без mutex
+
+**Mutex — нет владельца:** не reentrant, повторный `Lock()` из той же горутины → deadlock; fix: выделять inner-функцию без лока
+
+**Cache contention:** несколько ядер пишут в одну cache line (64B) → инвалидация → тормоза. **False sharing** — независимые поля в одной cache line; fix: padding `[56]byte` или sharding per-P
+
+**Singleflight** (`x/sync/singleflight`): дедупликация одинаковых запросов — 1000 горутин с одним ключом → выполняется 1, остальные ждут результат. Защита от cache stampede
 
 **context.Context:**
 - `WithTimeout` / `WithDeadline` / `WithCancel`
@@ -426,7 +450,7 @@ s = make([]int, 0)   // empty, len=0, cap=0, s == nil → false
 │ B         uint8      — log2(кол-во buckets): 2^B buckets
 │ noverflow uint16     — overflow buckets│
 │ hash0     uint32     — seed для хэша   │
-│ buckets   *bmap      — массив buckets  │
+│ **buckets**   *bmap      — массив buckets  │
 │ oldbuckets *bmap     — старые buckets (при росте)
 │ nevacuate  uintptr   — прогресс эвакуации
 └────────────────────────────────────────┘
